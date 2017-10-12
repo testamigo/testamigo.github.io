@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Vue</title>
+    <link rel="icon" href="src/assets/logo.png">
+    <link rel="stylesheet" href="src/assets/css/materialize.min.css">
+    <link rel="stylesheet" href="src/assets/css/style.css">
+  </head>
+  <body>
+
+    <div id="app">
+      	<div class="container">
+
+			<header class="header">
+				<nav>
+				  <div class="nav-wrapper">
+					<a class="brand-logo" href="/#/">Главная</a>
+					<ul class="right">
+					  <li><router-link to="/brands">+ Бренды</router-link></li>
+					  <li><router-link to="/projects">+ Проекты</router-link></li>
+					  <li><router-link to="/contacts">+ Контакты</router-link></li>
+					  <li><router-link to="/blog">+ Блог</router-link></li>
+					</ul>
+				  </div>
+				</nav>
+			</header>
+
+			<transition name="fade" mode="out-in">
+				<router-view></router-view>
+			</transition>
+
+		</div>
+    </div>
+
+
+    <script src="docs/build.js"></script>
+  </body>
+</html>
